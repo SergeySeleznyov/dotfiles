@@ -142,7 +142,7 @@ install_dotfiles () {
     t=$( echo $src_rel | cut -d'/' -f3- )
     dst="$HOME/.$t"
 
-    info "$src -> $dst"
+    # info "$src -> $dst"
     link_file "$src" "$dst"
   done
 }

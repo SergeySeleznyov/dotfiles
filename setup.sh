@@ -155,7 +155,7 @@ install_dotfiles () {
 # 	    fail "error installing dependencies"
 # 	  fi
 # 	fi
-}
+# }
 
 # setup_gitconfig
 install_dotfiles

@@ -94,6 +94,9 @@ class parser:
 
     for status_line in statusLines:
 
+      if status_line == "":
+        break;
+
       if status_line[:2] in conflict:
         conflicts += 1
         continue
@@ -121,13 +124,14 @@ class parser:
 
 
   @staticmethod
-  def parse(output):
-    if output[:2] != "##":
+  def parse(git_status_output):
+
+    if git_status_output[:2] != "##":
       return None
 
     response = parser.getClearResponse()
 
-    status_lines = output.split('\n')
+    status_lines = git_status_output.split('\n')
 
     parser.parseBranchLine(status_lines[0], response)
 

@@ -300,5 +300,18 @@ class TestGitStatusParser(unittest.TestCase):
         response = parser.parse(output)
         self.check(response, "master", changed=False, clean=True)
 
+    def test_bug1(self):
+        output = []
+        output.append("## master")
+        output.append("M file1")
+        output.append("M file2")
+        output.append("?? file3")
+        output.append("?? file4")
+        output.append("")
+        output = "\n".join(output)
+
+        response = parser.parse(output)
+        self.check(response, "master", staged_modified=2, unstaged_added=2, changed=True)
+
 if __name__ == '__main__':
     unittest.main()

@@ -12,7 +12,7 @@
 # https://github.com/olivierverdier/zsh-git-prompt
 # source $ZSH/../.oh-my-zsh-git-prompt/zshrc.sh
 # source ~/.oh-my-zsh-git-prompt/zshrc.sh
-source ~/github.SSeleznyov/zsh-git-prompt/zshrc_singleCommand.sh
+source ~/.oh-my-zsh-git-status/git-status-prompt.sh
 
 # The prompt
 PROMPT='%{$fg[magenta]%}┌[%{$fg[green]%}%~%{$fg[magenta]%}]

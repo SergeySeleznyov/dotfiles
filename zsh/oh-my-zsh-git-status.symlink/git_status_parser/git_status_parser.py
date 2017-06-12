@@ -2,6 +2,7 @@
 
 from __future__ import print_function
 import sys
+import re
 
 class parser:
 
@@ -29,8 +30,8 @@ class parser:
 
   @staticmethod
   def parseBranchLine(line, response):
-    localBranch = ""
-    remoteBranch = ""
+    localBranch = ''
+    remoteBranch = ''
     ahead = ''
     behind = ''
 
@@ -60,7 +61,25 @@ class parser:
     response["remoteBranch"] = remoteBranch
     response["ahead"] = ahead
     response["behind"] = behind
+    response["clean"] = True if ahead + behind == "" else False
+    response["changed"] = False
 
+  @staticmethod
+  def parseBranchLine_regex(line, response):
+
+    expression = "^## (?P<localBranch>[^\.]+)(?:\.*(?P<remoteBranch>\S*))?(?: \[(?:ahead (?P<ahead>\d+))?(?:, )?(?:behind (?P<behind>\d+))?)?"
+    compiled = re.compile(expression)
+    result = compiled.match(line)
+    
+    localBranch = result.group("localBranch") or ''
+    remoteBranch = result.group("remoteBranch") or ''
+    ahead = result.group("ahead") or ''
+    behind = result.group("behind") or ''
+
+    response["localBranch"] = localBranch
+    response["remoteBranch"] = remoteBranch
+    response["ahead"] = ahead
+    response["behind"] = behind
     response["clean"] = True if ahead + behind == "" else False
     response["changed"] = False
 
@@ -133,7 +152,8 @@ class parser:
 
     status_lines = git_status_output.split('\n')
 
-    parser.parseBranchLine(status_lines[0], response)
+    # parser.parseBranchLine(status_lines[0], response) # a little bit faster
+    parser.parseBranchLine_regex(status_lines[0], response)
 
     parser.parseStatusLines(status_lines[1:], response)
 

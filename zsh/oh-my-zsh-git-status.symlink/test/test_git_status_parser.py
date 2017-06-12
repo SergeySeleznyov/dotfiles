@@ -1,4 +1,5 @@
 import unittest
+import time
 
 from git_status_parser.git_status_parser import *
 
@@ -147,6 +148,13 @@ class TestGitStatusParser(unittest.TestCase):
 
     def compare(self, response, key, value):
         self.assertEqual(response[key], value)
+
+    def setUp(self):
+        self.startTime = time.time()
+
+    def tearDown(self):
+        t = time.time() - self.startTime
+        # print "%s: %.3f" % (self.id(), t)
 
     def test_empty(self):
         output = GitStatusMock.getOuput(0, [])

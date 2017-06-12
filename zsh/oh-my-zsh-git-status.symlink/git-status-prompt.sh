@@ -1,4 +1,4 @@
-# Origin is here:
+# Based on:
 # https://github.com/olivierverdier/zsh-git-prompt
 
 # To install source this file from your .zshrc file

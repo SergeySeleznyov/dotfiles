@@ -1,3 +1,6 @@
+# Based on:
+# https://github.com/yoshiori/oh-my-zsh-yoshiori
+
 # Here are the colours from Textmate's Monokai theme:
 # 
 # Black: 0, 0, 0
@@ -9,7 +12,6 @@
 # Cyan: 103, 217, 240
 # White: 242, 242, 242
 
-# https://github.com/olivierverdier/zsh-git-prompt
 source ~/.oh-my-zsh-git-status/git-status-prompt.sh
 
 # The prompt

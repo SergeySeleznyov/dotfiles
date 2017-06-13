@@ -13,8 +13,8 @@ Left-side prompt (from left to right):
 
   1. Local branch name
   2. '->' Remote branch name
-  3. Behind commits count
-  4. Ahead commits count
+  3. Behind commit count
+  4. Ahead commit count
   5. '|' separator if needed
   6. '+' added to index (in green)
   7. '~' updated in index (in green)

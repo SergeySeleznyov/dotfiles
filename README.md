@@ -27,7 +27,7 @@ or, if you have several authors dotfiles:
 git clone git://github.com/SergeySeleznyov/dotfiles.git ~/.dotfiles/SergeySeleznyov
 ```
 
-2. Run the _setup.sh_ script
+2. Run the [setup.sh(setup.sh) script
 
 it will create the symlinks
 

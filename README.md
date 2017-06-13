@@ -64,4 +64,4 @@ Thanks to the dotfiles authors who inspired me:
 
 Thanks to the [yoshiori](https://github.com/yoshiori/oh-my-zsh-yoshiori) the author of the _oh-my-zsh_'s theme which is used as the default.
 
-Thanks to the [olivierverdier](https://github.com/olivierverdier/zsh-git-prompt) he _oh-my-zsh_'s git status prompt author, who has inspired for deeply customizing it.
+Thanks to the [olivierverdier](https://github.com/olivierverdier/zsh-git-prompt) the _oh-my-zsh_'s git status prompt author, who has inspired for deeply customizing it.

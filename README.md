@@ -4,7 +4,6 @@
 ## oh-my-zsh screenshots
 
 ![screenshot1](/zsh/Screenshot1.png)
-
 ![screenshot2](/zsh/Screenshot2.png)
 
 ### Prompt

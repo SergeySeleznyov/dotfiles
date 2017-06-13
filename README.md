@@ -5,6 +5,7 @@
 
 ![screenshot1](/zsh/Screenshot1.png)
 ![screenshot2](/zsh/Screenshot2.png)
+![screenshot3](/zsh/Screenshot3.png)
 
 ### Prompt
 

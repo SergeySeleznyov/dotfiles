@@ -102,11 +102,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# https://github.com/olivierverdier/zsh-git-prompt
-# source $ZSH/../.oh-my-zsh-git-prompt/zshrc.sh
-# source ~/.oh-my-zsh-git-prompt/zshrc.sh
-# PROMPT='%B%m%~%b$(git_super_status) %# '
-# PROMPT='%m$(git_super_status) %# '
-# PROMPT=$'%{${fg[cyan]}%}%B%~%b$(git_super_status)%{${fg[default]}%} '
-# PROMPT='${ret_status} %{$fg[cyan]%}%c%{$reset_color%} $(git_super_status)%{${fg[default]}%} '

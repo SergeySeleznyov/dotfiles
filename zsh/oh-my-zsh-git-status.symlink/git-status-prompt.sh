@@ -68,7 +68,7 @@ function update_current_git_vars() {
 }
 
 
-git_super_status() {
+git_status_prompt() {
   precmd_update_git_vars
     if [ -n "$__CURRENT_GIT_STATUS" ]; then
         STATUS="$ZSH_THEME_GIT_PROMPT_PREFIX$ZSH_THEME_GIT_PROMPT_BRANCH_LOCAL$GIT_BRANCH_LOCAL%{${reset_color}%}"

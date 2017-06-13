@@ -10,13 +10,11 @@
 # White: 242, 242, 242
 
 # https://github.com/olivierverdier/zsh-git-prompt
-# source $ZSH/../.oh-my-zsh-git-prompt/zshrc.sh
-# source ~/.oh-my-zsh-git-prompt/zshrc.sh
 source ~/.oh-my-zsh-git-status/git-status-prompt.sh
 
 # The prompt
 PROMPT='%{$fg[magenta]%}┌[%{$fg[green]%}%~%{$fg[magenta]%}]
-└> %{$reset_color%}$(git_super_status)%{$reset_color%}'
+└> %{$reset_color%}$(git_status_prompt)%{$reset_color%}'
 
 # └> %{$reset_color%}$(git_prompt_info)%{$reset_color%}'
 

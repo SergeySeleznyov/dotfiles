@@ -12,17 +12,17 @@
 Left-side prompt (from left to right):
 
   1. Local branch name
-  2. -> Remote branch name
+  2. '->' Remote branch name
   3. Behind commits count
   4. Ahead commits count
-  5. "|" separator if needed
-  6. + added to index (in green)
-  7. ~ updated in index (in green)
-  8. - deleted in index (in green)
-  9. + untracked (in red)
-  10. ~ updated not in index (in red)
-  11. - deleted not in index (in red)
-  12. x conflict count
+  5. '|' separator if needed
+  6. '+' added to index (in green)
+  7. '~' updated in index (in green)
+  8. '-' deleted in index (in green)
+  9. '+' untracked (in red)
+  10. '~' updated not in index (in red)
+  11. '-' deleted not in index (in red)
+  12. 'x' conflict count
   
 Right-side prompt (from left to right):
 

@@ -59,10 +59,10 @@ function git_prompt_stash_count(){
   fi
 }
 
-function git_prompt_modified_count(){
-  # git diff --cached --numstat | wc -l
-  COUNT=$(git diff --numstat 2>/dev/null | wc -l | tr -d ' ')
-  if [ "$COUNT" -gt 0 ]; then
-    echo "$ZSH_THEME_GIT_PROMPT_MODIFIED_COUNT_BEFORE$COUNT$ZSH_THEME_GIT_PROMPT_MODIFIED_COUNT_AFTER"
-  fi
-}
+# function git_prompt_modified_count(){
+#   # git diff --cached --numstat | wc -l
+#   COUNT=$(git diff --numstat 2>/dev/null | wc -l | tr -d ' ')
+#   if [ "$COUNT" -gt 0 ]; then
+#     echo "$ZSH_THEME_GIT_PROMPT_MODIFIED_COUNT_BEFORE$COUNT$ZSH_THEME_GIT_PROMPT_MODIFIED_COUNT_AFTER"
+#   fi
+# }
